@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নিউটন ইনস্টিটিউট</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ফ্লোটিং অ্যাকশন বাটন -->
+    <div class="floating-buttons">
+        <a href="tel:+8801234567890" class="floating-btn call-btn">
+            <i class="fas fa-phone"></i>
+            <span class="btn-tooltip">কল করুন</span>
+        </a>
+        <a href="https://wa.me/8801234567890" target="_blank" class="floating-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-tooltip">হোয়াটসঅ্যাপ</span>
+        </a>
+    </div>
+
+    <!-- নেভিগেশন বার -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <span class="logo-text">XYZ <span class="logo-highlight">ইনস্টিটিউট</span></span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">হোম</a>
+                <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
+                <a href="#programs" class="nav-link">প্রোগ্রামসমূহ</a>
+                <a href="#branches" class="nav-link">শাখাসমূহ</a>
+                <a href="#results" class="nav-link">ফলাফল</a>
+                <a href="#notice" class="nav-link">নোটিশ</a>
+                <a href="#contact" class="nav-link">যোগাযোগ</a>
+                <a href="#" class="nav-link login-btn">লগইন</a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- হিরো সেকশন -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1 class="slide-title">জ্ঞানের আলো ছড়িয়ে দিতে</h1>
+                    <p class="slide-subtitle">দেশের সেরা শিক্ষকদের তত্ত্বাবধানে গুণগত শিক্ষা</p>
+                    <div class="slide-buttons">
+                        <a href="#admission" class="btn primary-btn">ভর্তি আবেদন করুন</a>
+                        <a href="#" class="btn secondary-btn">লগইন করুন</a>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <img src="edu.jpg" alt="ইনস্টিটিউট ক্লাসরুম">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1 class="slide-title">ডিজিটাল লার্নিং সিস্টেম</h1>
+                    <p class="slide-subtitle">আধুনিক প্রযুক্তির মাধ্যমে ইন্টারেক্টিভ শিক্ষা</p>
+                    <div class="slide-buttons">
+                        <a href="#admission" class="btn primary-btn">ভর্তি আবেদন করুন</a>
+                        <a href="#" class="btn secondary-btn">লগইন করুন</a>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="ডিজিটাল লার্নিং">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1 class="slide-title">সাফল্যের ধারাবাহিকতা</h1>
+                    <p class="slide-subtitle">গত ৫ বছরে ১০০০+ শিক্ষার্থীর সাফল্য</p>
+                    <div class="slide-buttons">
+                        <a href="#admission" class="btn primary-btn">ভর্তি আবেদন করুন</a>
+                        <a href="#" class="btn secondary-btn">লগইন করুন</a>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="সাফল্য উদ্যাপন">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- দ্রুত পরিসংখ্যান -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="1000">০</h3>
+                    <p class="stat-text">শিক্ষার্থী</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="15">০</h3>
+                    <p class="stat-text">শাখা</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="50">০</h3>
+                    <p class="stat-text">শিক্ষক</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="95">০</h3>
+                    <p class="stat-text">সাফল্যের হার</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- কেন আমাদের ইনস্টিটিউট নির্বাচন করবেন -->
+    <section class="why-us" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">কেন আমাদের ইনস্টিটিউট নির্বাচন করবেন</h2>
+                <p class="section-subtitle">গুণগত শিক্ষার জন্য আমাদের অঙ্গীকার</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>অভিজ্ঞ শিক্ষক</h3>
+                    <p>দেশের সেরা বিশ্ববিদ্যালয়ের গ্রাজুয়েট ও অভিজ্ঞ শিক্ষকমণ্ডলী</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>আধুনিক কারিকুলাম</h3>
+                    <p>সিলেবাসভিত্তিক ও বিগত বছরের প্রশ্ন বিশ্লেষণ করে পাঠ্যক্রম</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3>ডিজিটাল ক্লাস</h3>
+                    <p>অনলাইন ক্লাস রেকর্ডিং, লাইভ ক্লাস এবং ডিজিটাল অ্যাসাইনমেন্ট</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>নিয়মিত মূল্যায়ন</h3>
+                    <p>সাপ্তাহিক কুইজ, মাসিক পরীক্ষা এবং মডেল টেস্টের মাধ্যমে মূল্যায়ন</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- একাডেমিক কাঠামো -->
+    <section class="academic-structure" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">একাডেমিক কাঠামো</h2>
+                <p class="section-subtitle">আমাদের শিক্ষা পদ্ধতি ও কার্যক্রম</p>
+            </div>
+            <div class="academic-grid">
+                <div class="academic-card">
+                    <div class="academic-header">
+                        <h3>নবম-দশম শ্রেণি</h3>
+                        <span class="academic-badge">এসএসসি</span>
+                    </div>
+                    <ul class="academic-list">
+                        <li><i class="fas fa-check"></i> বিজ্ঞান, ব্যবসায় শিক্ষা, মানবিক</li>
+                        <li><i class="fas fa-check"></i> সাপ্তাহিক ৬ দিন ক্লাস</li>
+                        <li><i class="fas fa-check"></i> মাসিক ২টি মডেল টেস্ট</li>
+                        <li><i class="fas fa-check"></i> গাইড টিচার সুবিধা</li>
+                    </ul>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-header">
+                        <h3>একাদশ-দ্বাদশ শ্রেণি</h3>
+                        <span class="academic-badge">এইচএসসি</span>
+                    </div>
+                    <ul class="academic-list">
+                        <li><i class="fas fa-check"></i> বিজ্ঞান, ব্যবসায় শিক্ষা, মানবিক</li>
+                        <li><i class="fas fa-check"></i> সাপ্তাহিক ৬ দিন ক্লাস</li>
+                        <li><i class="fas fa-check"></i> সাপ্তাহিক কুইজ পরীক্ষা</li>
+                        <li><i class="fas fa-check"></i> বিশেষ টিউটোরিয়াল ক্লাস</li>
+                    </ul>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-header">
+                        <h3>ভর্তি প্রস্তুতি</h3>
+                        <span class="academic-badge">বিশ্ববিদ্যালয়</span>
+                    </div>
+                    <ul class="academic-list">
+                        <li><i class="fas fa-check"></i> মেডিকেল, বিশ্ববিদ্যালয়, ইঞ্জিনিয়ারিং</li>
+                        <li><i class="fas fa-check"></i> স্পেশাল ক্র্যাশ কোর্স</li>
+                        <li><i class="fas fa-check"></i> মক টেস্ট সিরিজ</li>
+                        <li><i class="fas fa-check"></i> এডমিশন কাউন্সেলিং</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- শাখাসমূহ -->
+    <section class="branches" id="branches">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">আমাদের শাখাসমূহ</h2>
+                <p class="section-subtitle">সারা দেশে আমাদের অবস্থান</p>
+            </div>
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-image">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="ঢাকা শাখা">
+                        <div class="branch-overlay">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="branch-content">
+                        <h3>ঢাকা মেইন ক্যাম্পাস</h3>
+                        <p>ধানমন্ডি, ঢাকা</p>
+                        <p><i class="fas fa-phone"></i> ০১৭১২৩৪৫৬৭৮</p>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-image">
+                        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="চট্টগ্রাম শাখা">
+                        <div class="branch-overlay">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="branch-content">
+                        <h3>চট্টগ্রাম শাখা</h3>
+                        <p>আগরতলা, চট্টগ্রাম</p>
+                        <p><i class="fas fa-phone"></i> ০১৮১২৩৪৫৬৭৮</p>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-image">
+                        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w-1350&q=80" alt="সিলেট শাখা">
+                        <div class="branch-overlay">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="branch-content">
+                        <h3>সিলেট শাখা</h3>
+                        <p>জিন্দাবাজার, সিলেট</p>
+                        <p><i class="fas fa-phone"></i> ০১৯১২৩৪৫৬৭৮</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- শিক্ষার্থী ও অভিভাবক ডিজিটাল সিস্টেম -->
+    <section class="digital-system">
+        <div class="container">
+            <div class="digital-content">
+                <div class="digital-text">
+                    <h2>শিক্ষার্থী ও অভিভাবক ডিজিটাল সিস্টেম</h2>
+                    <p>আমাদের ডিজিটাল প্লাটফর্মের মাধ্যমে অভিভাবকরা তাদের সন্তানের অগ্রগতি সরাসরি পর্যবেক্ষণ করতে পারবেন। উপস্থিতি, পরীক্ষার ফলাফল, বেতন তথ্য সবই অনলাইনে উপলব্ধ।</p>
+                    <ul class="digital-features">
+                        <li><i class="fas fa-check-circle"></i> অনলাইন অ্যাটেনডেন্স রিপোর্ট</li>
+                        <li><i class="fas fa-check-circle"></i> রেজাল্ট ট্র্যাকিং সিস্টেম</li>
+                        <li><i class="fas fa-check-circle"></i> অনলাইন ফি পেমেন্ট</li>
+                        <li><i class="fas fa-check-circle"></i> লাইভ ক্লাস এক্সেস</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn">সিস্টেমে লগইন করুন</a>
+                </div>
+                <div class="digital-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="ডিজিটাল সিস্টেম">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- নোটিশ ও ঘোষণা -->
+    <section class="notice-section" id="notice">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">নোটিশ ও ঘোষণা</h2>
+                <p class="section-subtitle">সর্বশেষ খবর ও আপডেট</p>
+            </div>
+            <div class="notice-board">
+                <div class="notice-header">
+                    <h3><i class="fas fa-bullhorn"></i> সর্বশেষ ঘোষণা</h3>
+                    <a href="#" class="view-all">সব দেখুন <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="notice-list">
+                    <div class="notice-item">
+                        <div class="notice-date">
+                            <span class="date-day">২৫</span>
+                            <span class="date-month">মার্চ</span>
+                        </div>
+                        <div class="notice-content">
+                            <h4>নবম শ্রেণির ভর্তি পরীক্ষার তারিখ ঘোষণা</h4>
+                            <p>২০২৬ শিক্ষাবর্ষের নবম শ্রেণির ভর্তি পরীক্ষা ১০ এপ্রিল অনুষ্ঠিত হবে।</p>
+                        </div>
+                    </div>
+                    <div class="notice-item">
+                        <div class="notice-date">
+                            <span class="date-day">২০</span>
+                            <span class="date-month">মার্চ</span>
+                        </div>
+                        <div class="notice-content">
+                            <h4>বই বিতরণ কর্মসূচি</h4>
+                            <p>নতুন শিক্ষাবর্ষের বই বিতরণ ১লা এপ্রিল থেকে শুরু হবে।</p>
+                        </div>
+                    </div>
+                    <div class="notice-item">
+                        <div class="notice-date">
+                            <span class="date-day">১৫</span>
+                            <span class="date-month">মার্চ</span>
+                        </div>
+                        <div class="notice-content">
+                            <h4>ঈদ ছুটির তারিখ ঘোষণা</h4>
+                            <p>আসন্ন ঈদুল ফিতর উপলক্ষে ১০-১৪ এপ্রিল পর্যন্ত ইনস্টিটিউট বন্ধ থাকবে।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফলাফল ও সাফল্য -->
+    <section class="results" id="results">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ফলাফল ও সাফল্য</h2>
+                <p class="section-subtitle">আমাদের শিক্ষার্থীদের অর্জন</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="সাফল্য ১">
+                    </div>
+                    <div class="result-content">
+                        <h3>আহমেদ রফিক</h3>
+                        <p>মেডিকেল ভর্তি পরীক্ষায় ১০ম স্থান</p>
+                        <span class="result-year">২০২৩</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w-1350&q=80" alt="সাফল্য ২">
+                    </div>
+                    <div class="result-content">
+                        <h3>সুমাইয়া আক্তার</h3>
+                        <p>বুয়েট ভর্তি পরীক্ষায় ১৫তম স্থান</p>
+                        <span class="result-year">২০২৩</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="সাফল্য ৩">
+                    </div>
+                    <div class="result-content">
+                        <h3>রিয়াদ হোসেন</h3>
+                        <p>এসএসসিতে জিপিএ ৫.০০ প্রাপ্তি</p>
+                        <span class="result-year">২০২২</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ভর্তি কল-টু-অ্যাকশন -->
+    <section class="admission-cta" id="admission">
+        <div class="container">
+            <div class="cta-content">
+                <h2>ভর্তি চলছে ২০২৬ শিক্ষাবর্ষের</h2>
+                <p>সীমিত আসনে ভর্তি সুযোগ। আজই যোগাযোগ করুন এবং সেরা শিক্ষার সুযোগ নিশ্চিত করুন।</p>
+                <a href="#contact" class="btn primary-btn">যোগাযোগ করুন</a>
+                <a href="tel:+8801234567890" class="btn secondary-btn">কল করুন: ০১২৩৪৫৬৭৮৯০</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- যোগাযোগ বিভাগ -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">যোগাযোগ করুন</h2>
+                <p class="section-subtitle">আমাদের সাথে যোগাযোগের মাধ্যম</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ঠিকানা</h3>
+                            <p>ধানমন্ডি লেক রোড, ঢাকা-১২০৫</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ফোন নম্বর</h3>
+                            <p>০১৭১২৩৪৫৬৭৮, ০১৮১২৩৪৫৬৭৮</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ইমেইল</h3>
+                            <p>info@newtoncoaching.edu.bd</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>কার্যসময়</h3>
+                            <p>শনিবার-বৃহস্পতিবার: সকাল ৮টা - রাত ১০টা</p>
+                            <p>শুক্রবার: সকাল ১০টা - দুপুর ২টা</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="আপনার নাম" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="ফোন নম্বর" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="ইমেইল ঠিকানা" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">বিষয় নির্বাচন করুন</option>
+                                <option value="admission">ভর্তি সম্পর্কিত</option>
+                                <option value="information">সাধারণ তথ্য</option>
+                                <option value="complaint">অভিযোগ</option>
+                                <option value="other">অন্যান্য</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="আপনার বার্তা" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">বার্তা পাঠান</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <span class="logo-text">নিউটন <span class="logo-highlight">ইনস্টিটিউট</span></span>
+                    </a>
+                    <p>গুণগত শিক্ষার মাধ্যমে আগামী প্রজন্মকে গড়ে তোলার অঙ্গীকারে আমরা ২০১০ সাল থেকে কাজ করে যাচ্ছি।</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>লিংকসমূহ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">হোম</a></li>
+                        <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#programs">প্রোগ্রামসমূহ</a></li>
+                        <li><a href="#branches">শাখাসমূহ</a></li>
+                        <li><a href="#results">ফলাফল</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>সেবাসমূহ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">ভর্তি পরীক্ষা</a></li>
+                        <li><a href="#">মডেল টেস্ট</a></li>
+                        <li><a href="#">লাইব্রেরি সুবিধা</a></li>
+                        <li><a href="#">ক্যারিয়ার কাউন্সেলিং</a></li>
+                        <li><a href="#">অনলাইন ক্লাস</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>নিউজলেটার</h3>
+                    <p>সর্বশেষ আপডেট পেতে সাবস্ক্রাইব করুন</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="আপনার ইমেইল">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৪ নিউটন ইনস্টিটিউট। সকল স্বত্ব সংরক্ষিত।</p>
+                <p>ডিজাইন ও ডেভেলপমেন্ট: Venture IT</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
