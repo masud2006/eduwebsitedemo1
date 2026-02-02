@@ -5,7 +5,7 @@ This demo showcases how a professional academic website should look, feel, and p
 
 🔗 Live Demo
 👉 Website Preview:
-https://your-education-demo-link.vercel.app
+https://eduwebsitedemo1.vercel.app/
 
 Viewing the live demo helps school authorities understand exactly what they will get after customization.
 
